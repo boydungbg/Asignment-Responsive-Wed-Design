@@ -28,36 +28,21 @@ document.getElementById('button-right-click-top').addEventListener('click', () =
   document.getElementById('down-iconn').classList.toggle('transform-360');
   console.log('loz');
 })
-function openPage(pageName, elmnt, color) {
-  // Hide all elements with class="tabcontent" by default */
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+
+document.getElementById("defaultOpen").click();s
+function ChangecatList() {
+  var catList = document.getElementById("validationCustom03");
+  var actList = document.getElementById("validationCustom04");
+  var selCat = catList.options[catList.selectedIndex].value;
+  while (actList.options.length) {
+    actList.remove(0);
   }
-
-  // Remove the background color of all tablinks/buttons
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
+  var cats = catAndActs[selCat];
+  if (cats) {
+    var i;
+    for (i = 0; i < cats.length; i++) {
+      var cat = new Option(cats[i], i);
+      actList.options.add(cat);
+    }
   }
-
-  // Show the specific tab content
-  document.getElementById(pageName).style.display = "block";
-
-  // Add the specific color to the button used to open the tab content
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-$(document).ready(function () {
-  $(".button-right-click1").bind("click", function () {
-      $(this).toggleClass("changebackground1");
-      $("#arrow1").toggleClass("rotate");
-  });
-  $("#button-right-click2").bind("click", function () {
-      $(this).toggleClass("changebackground2");
-      $("#arrow2").toggleClass("rotate");
-  });
-});
+} 

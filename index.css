@@ -15,10 +15,6 @@ body {
     #navbarResponsive {
         display: none;
     }
-    /* #card-price-detail
-    {
-        display: block;
-    } */
 }
 
 .dropdown-menu li {
@@ -37,6 +33,9 @@ body {
     #logo {
         width: 195px;
         height: auto;
+    }
+    .tab1 {
+        width: 187%;
     }
     #logged {
         padding: 3px 10px !important;
@@ -58,6 +57,9 @@ body {
     }
     button.abc {
         display: block;
+    }
+    #myTab {
+        padding-top: 4rem;
     }
 }
 
@@ -443,7 +445,7 @@ nav {
     position: relative;
 }
 
-.button-right-click1 {
+.button-right-click1, .button-right-click2, .button-right-click3 {
     width: 100%;
     background-color: #e8b119;
     color: white;
@@ -469,6 +471,7 @@ nav {
 
 #hihi {
     margin-top: 10px;
+    color: #0685aa;
 }
 
 .title-detail {
@@ -506,8 +509,9 @@ nav {
 }
 
 .content-price {
+    margin-top: -22px;
     font-size: 16px;
-    margin-left: 2.5rem;
+    margin-left: -7.5rem;
 }
 
 .header-icon {
@@ -557,6 +561,10 @@ nav {
     left: -1.8rem;
     top: 2.65rem;
     margin-bottom: 1.7rem;
+}
+
+.gg {
+    background-color: #dff0f6;
 }
 
 .segment-header::after {
@@ -646,72 +654,213 @@ body, html {
     font-family: Arial;
 }
 
-/* Style tab links */
-
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 40%;
-    display: flex;
+.tab-link {
+    text-decoration: none;
+    font-size: 0.85rem;
 }
 
-.tablink:hover {
-    background-color: #777;
+.tab-index {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(7, 45, 56, 0.6);
+    margin: 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    font-size: 0.85rem;
+    line-height: 2rem;
+    color: #fff;
+    text-align: center;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
-
-.tabcontent {
-    color: white;
-    display: none;
-    height: 100%;
+.tab-content-1 {
+    background: #dff0f6;
+    padding: 1rem;
+    font-size: 0.8rem;
+    align-items: center;
 }
 
-#Home {
-    background-color: white;
-    color: black;
-}
-
-#News {
-    background-color: white;
-}
-
-.vong-tron-1 {
-    border-radius: 100%;
-    width: 2.9rem;
-    height: 2.6rem;
-    background-color: #e8b119;
-    position: relative;
-}
-
-.vong-tron-2 {
-    border-radius: 100%;
-    width: 2.9rem;
-    height: 2.6rem;
+.changebackground1 {
     background-color: #168fb0;
-    position: relative;
 }
 
-.content-inside {
-    position: absolute;
-    width: -webkit-fill-available;
-    top: 20%;
-    color: white;
+.changebackground2 {
+    background-color: #e8b119;
 }
 
-.tab {
-    color: #168fb0;
-    display: flex;
+.changebackground3 {
+    background-color: #168fb0;
 }
 
-.text-truncate {
+.rotate {
+    transform: rotate(180deg);
+}
+
+.button-tab {
+    background-color: #168fb0;
+    border: none;
+    color: #fff;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 0.8rem;
+    height: 2.125rem;
+    border-radius: 6px;
+    text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-top: 0.5rem;
+}
+
+.icon-notice {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(7, 45, 56, 0.6);
+    margin: 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    line-height: 2rem;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.notice-content {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.notice-content {
+    font-size: 0.9rem;
+}
+
+.customer {
+    background-color: #168fb0;
+    width: auto;
+    height: 3.5rem;
+    position: relative;
+}
+
+.content-customer {
+    background-color: #e8b119;
+    border-radius: 50%;
+    margin: 2rem;
+    color: white;
+    padding: 0.8rem;
+    position: absolute;
+    margin: 0.5rem;
+}
+
+.passage-index {
+    background: none;
+    background-color: #e8b119;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: white;
+    padding: 0.5rem;
+}
+
+.passages {
+    background-color: #168fb0;
+    padding: 0.5rem 1rem;
+    display: flex;
+}
+
+.single-passage, .seat {
+    color: white;
+    margin: auto;
+}
+
+.seats-list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.image {
+    display: inline-block;
+    margin: 0;
+    width: 31px;
+    height: 27px;
+}
+
+#seat-type-seat0 {
+    padding-bottom: 15px;
+}
+
+.aircraft-name {
+    margin: 16px 0;
+    font-size: 1.5rem;
+    color: #949494;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 1.5rem;
+}
+
+.right-content {
+    border: none;
+    padding: 1rem 0;
+}
+
+.seat-mapp {
+    text-align: center;
+}
+
+.seat-caption {
+    color: #006885;
+    font-weight: normal;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: block;
+}
+
+.seat-caption a {
+    text-decoration: none;
+    color: #949494;
+}
+
+.dxp-seat-map {
+    width: 100%;
+    max-width: 100%;
+    overflow: scroll;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.seat-map {
+    margin: 0 auto;
+    text-align: center;
+    min-width: 20rem;
+    table-layout: fixed;
+}
+
+th {
+    padding: 1.5rem;
+}
+
+td {
+    padding: 1rem;
+    margin: 1rem;
+    color: black;
+}
+
+table {
+    border: 0.1rem solid;
+    border-left-color: #168fb0;
+    border-right-color: #168fb0;
+    border-top: none;
+    border-bottom: none;
+    width: 100%;
+    height: auto;
+}
+
+.seat-map-wrapper {
+    padding: 3rem;
 }
