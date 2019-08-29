@@ -61,6 +61,12 @@ body {
     #myTab {
         padding-top: 4rem;
     }
+    .button-tab {
+        width: 100%;
+    }
+    .seat-mapp {
+        padding: 0 .2rem;
+    }
 }
 
 .content-hidden a {
@@ -502,6 +508,8 @@ nav {
 .right-content {
     position: relative;
     display: flex;
+    width: 100%;
+    height: auto;
 }
 
 .foorder-right {
@@ -798,9 +806,7 @@ body, html {
     margin: 16px 0;
     font-size: 1.5rem;
     color: #949494;
-    font: inherit;
-    vertical-align: baseline;
-    font-size: 1.5rem;
+    display: block;
 }
 
 .right-content {
@@ -810,6 +816,8 @@ body, html {
 
 .seat-mapp {
     text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 .seat-caption {
@@ -818,6 +826,8 @@ body, html {
     font-size: 0.9rem;
     cursor: pointer;
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .seat-caption a {
@@ -827,40 +837,32 @@ body, html {
 
 .dxp-seat-map {
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     overflow: scroll;
     display: inline-block;
     position: relative;
     text-align: center;
+    height: auto;
 }
 
 .seat-map {
-    margin: 0 auto;
-    text-align: center;
-    min-width: 20rem;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
     table-layout: fixed;
 }
 
 th {
-    padding: 1.5rem;
+    padding-bottom:  1.3rem;
+    padding-top:  1.3rem;
 }
 
 td {
-    padding: 1rem;
-    margin: 1rem;
-    color: black;
-}
-
-table {
-    border: 0.1rem solid;
-    border-left-color: #168fb0;
-    border-right-color: #168fb0;
-    border-top: none;
-    border-bottom: none;
-    width: 100%;
-    height: auto;
+    padding-top: 2rem;
 }
 
 .seat-map-wrapper {
     padding: 3rem;
+    width: 100%;
+    height: auto;
 }
