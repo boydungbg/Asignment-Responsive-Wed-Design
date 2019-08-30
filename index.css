@@ -34,9 +34,6 @@ body {
         width: 195px;
         height: auto;
     }
-    .tab1 {
-        width: 187%;
-    }
     #logged {
         padding: 3px 10px !important;
         /* width: 60px;
@@ -870,4 +867,31 @@ td {
     width: 100%;
     padding-bottom: 4rem;
     height: auto;
+}
+
+.but1 {
+    width: 100%;
+    display: block;
+    background-color: #007bff!important;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tab1 {
+    width: 187%;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .but1 {
+        display: inline-block;
+        width: auto;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .tab1 {
+        display: inline-block;
+        width: auto;
+    }
 }
