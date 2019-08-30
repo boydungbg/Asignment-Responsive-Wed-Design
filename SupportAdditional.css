@@ -1,0 +1,844 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    width: 347px;
+    height: 64px;
+}
+
+#description {
+    color: white;
+}
+
+.title {
+    color: #DBA510;
+}
+
+.caption {
+    padding: 15px 5px;
+}
+
+.img-div {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    #navbarResponsive {
+        display: none;
+    }
+    /* #card-price-detail
+    {
+        display: block;
+    } */
+}
+
+.dropdown-menu li {
+    padding: 20px;
+}
+
+.dropdown-menu>.container {
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+    #logged {
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+    }
+    #logo {
+        width: 215px;
+        height: auto;
+    }
+    .modal-dialog {
+        left: 3%;
+        width: 88%;
+        height: auto;
+    }
+    .modal-body {
+        left: 10% !important;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #select-language {
+        display: none;
+    }
+    #setting {
+        display: inline-block;
+    }
+    #logo {
+        height: auto;
+    }
+    #logged {
+        padding: 3px 10px !important;
+        /* width: 60px;
+        height: 20px;
+        font-size: 10px; */
+    }
+    /* .modal-dialog{
+        left: 10%;
+        width: 280px;
+        height: auto;
+    } */
+    .modal-body {
+        left: 23%;
+    }
+    #navlink {
+        padding: 20px 2px !important;
+    }
+    .dropdow-content {
+        display: none;
+        position: absolute;
+        z-index: 999;
+    }
+    #dataCollapse {
+        position: relative;
+        display: block;
+    }
+    button.abc {
+        display: none;
+    }
+}
+
+.content-hidden a {
+    margin: 10px;
+}
+
+.left-top-control {
+    position: relative;
+}
+
+#ggg {
+    position: absolute;
+    width: 166.5%;
+    margin: 0;
+    padding: 0;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .10s ease;
+    -o-transition: height .10s ease;
+    transition: height .10s ease;
+}
+
+.btn-ctrl {
+    color: black !important;
+    background-color: #DBA510;
+    margin-top: 10px;
+    border: 0;
+}
+
+#language>.btn-ctrl>.summary-button {
+    margin-top: 10px;
+}
+
+#language {
+    background-color: white;
+    margin-top: 15px;
+}
+
+.abc {
+    border: none;
+    background-color: white;
+    display: none;
+}
+
+#navbarResponsive {
+    width: 100%;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.dropbtn {
+    border: none;
+    background-color: white;
+    display: none;
+}
+
+.btn-home {
+    background-color: #e9e0c6;
+}
+
+.btn-dropdown {
+    border-top: 1px solid white;
+    background-color: #0685aa;
+    text-decoration: none !important;
+}
+
+.wrapper-dropdown-1 {
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    /* margin: 0 auto; */
+    background: #168fb0;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-top: 1px solid #168fb0;
+    border-right: 1px solid #168fb0;
+}
+
+.language {
+    border: 1px solid #168fb0;
+    border-radius: 5px;
+}
+
+.wrapper-dropdown-1:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent #fff;
+}
+
+.wrapper-dropdown-1 .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    margin-right: -1px;
+    background: #fff;
+    list-style: none;
+    font-weight: normal;
+    opacity: 0;
+    pointer-events: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 0px;
+    border-left: 1px solid #168fb0;
+    border-right: 1px solid #168fb0;
+    border-bottom: 1px solid #168fb0;
+}
+
+.wrapper-dropdown-1 .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #9e9e9e;
+    padding: 10px 20px;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-1 .dropdown li:hover a {
+    background: #f3f8f8;
+}
+
+/* Active state */
+
+.wrapper-dropdown-1.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper-dropdown-1.active:after {
+    border-color: #9bc7de transparent;
+    border-width: 6px 6px 0 6px;
+    margin-top: -3px;
+}
+
+.wrapper-dropdown-1.active {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #168fb0), color-stop(78%, #168fb0), color-stop(78%, #ffffff), color-stop(100%, #ffffff));
+}
+
+#dd>.dropdown>li {
+    padding: 10px;
+}
+
+.ul-footer {
+    font-size: 1rem;
+    list-style: none;
+    padding-inline-start: 0px !important;
+}
+
+.li-footer {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 0.5rem;
+}
+
+#continue {
+    padding: 0.5rem 1.5rem;
+    color: white;
+}
+
+i {
+    color: white;
+}
+
+footer {
+    background-color: #0091B1;
+}
+
+.link-footer {
+    list-style: none;
+    color: white !important;
+    text-decoration: none !important;
+    line-height: 3rem;
+    flex: 0 1 auto;
+}
+
+.btn-dropdown a {
+    color: white;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+.summary-button>button>.button-label, .sabre-dx-component-button {
+    padding: 10px;
+}
+
+.select-button-hidden {
+    display: none;
+    background-color: #E8B119;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+
+button {
+    border: none;
+    color: white;
+}
+
+.btn-Control-left {
+    background-color: #E8B119;
+    /* display: flex; */
+    width: 100%;
+}
+
+.btn-Control-right {
+    background: #0091B1;
+    border-radius: 0;
+}
+
+@media only screen and (max-width: 950px) {
+    button.abc {
+        display: block;
+    }
+    .navbar-toggler-icon {
+        display: block;
+    }
+    #select-language {
+        display: none;
+    }
+    #setting {
+        display: none;
+    }
+    .content-hidden {
+        display: none;
+    }
+    .Control-nav {
+        display: none;
+    }
+    .select-button-hidden {
+        display: block;
+    }
+    .model-dialog {
+        left: 30%;
+        width: 500px;
+        height: 400px;
+    }
+}
+
+.Control-nav {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+#top {
+    background-color: white !important;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 9999;
+    ;
+}
+
+.navbar-nav ml-auto {
+    padding: 20px;
+}
+
+.nav__link-title {
+    font-size: 18px;
+}
+
+.navlink {
+    color: black !important;
+    text-decoration: none;
+}
+
+.nav-item {
+    background-color: white;
+    border: 0.5px solid #17a2b8;
+}
+
+nav {
+    background: #168fb0;
+}
+
+#first-link {
+    cursor: pointer;
+}
+
+.wrap__nav {
+    list-style: none;
+    height: 100%;
+    margin-bottom: 0rem;
+    padding-left: 0rem;
+}
+
+.nav__item {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: white !important;
+}
+
+.nav__link {
+    text-decoration: none !important;
+    /* cursor: not-allowed; */
+    display: inline-flex;
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 200px;
+    margin-left: 1px;
+}
+
+.nav__link p {
+    margin: 10px 0;
+}
+
+.nav__link:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #168fb0;
+    transform: skew(30deg);
+    z-index: -1;
+    border-right: 1px solid #ccc;
+}
+
+.nav__link:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    background: #168fb0;
+    transform: skew(-30deg);
+    z-index: -1;
+    border-right: 1px solid #ccc;
+}
+
+.bg-yellow:after, .bg-yellow:before {
+    background: #e8b119;
+}
+
+.nav__link-text {
+    margin-top: 0.7rem;
+    display: block;
+}
+
+.nav__link-text>span {
+    text-decoration: none;
+    display: block;
+}
+
+.navlink {
+    margin-right: 2em;
+}
+
+.navlink :hover {
+    color: #0685aa !important;
+}
+
+#logged {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 12px;
+    background-color: #E8B119;
+}
+
+#form-control {
+    width: 149px !important;
+}
+
+.temp {
+    position: relative;
+}
+
+@media only screen and (min-width: 760px) {
+    .temp {
+        order: 3;
+    }
+}
+
+#content {
+    background: url(image/plane-841441_1280-Free-Photos-Pixabay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-row {
+    margin-top: 20px;
+}
+
+.navlink {
+    display: block !important;
+}
+
+.card-body {
+    border-radius: 5px;
+    padding: 1.5rem;
+    border: none;
+}
+
+.card {
+    border-radius: 5px;
+    border: none;
+}
+
+#card-price-detail {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.title-wrapper {
+    color: #DBA510;
+    padding: 15px 0px;
+    text-align: left
+}
+
+.col-5, .col-7 {
+    margin-top: 10px;
+}
+
+.content-head {
+    font-size: 0.8125rem;
+}
+
+.header-time {
+    display: flex;
+}
+
+.direction {
+    font-size: 24px;
+}
+
+.date {
+    font-size: 0.8rem;
+    display: inline;
+    position: relative;
+    margin-left: 5px;
+}
+
+.direction {
+    float: left;
+}
+
+.container-fluid .abc {
+    background-color: whitesmoke;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#inhere {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.plus-time {
+    color: red;
+}
+
+.header-icon {
+    float: left;
+}
+
+.header-info {
+    display: inline-block;
+}
+
+.box {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px
+}
+
+button, .button-label {
+    background-color: #ffc107;
+    border-radius: 5px;
+}
+
+.button-right {
+    width: 100%;
+    background-color: #168fb0;
+    color: white;
+    height: 90px;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+.button-right-click1 {
+    width: 100%;
+    background-color: #e8b119;
+    color: white;
+    height: 90px;
+    border: none;
+    position: relative;
+}
+
+.dow-icon {
+    position: absolute;
+    right: 1rem;
+    top: 35%;
+}
+
+#hiden-content {
+    display: none;
+}
+
+#wrrap-right {
+    margin: 10px;
+    color: #0685aa;
+}
+
+#hihi {
+    margin-top: 10px;
+}
+
+.title-detail {
+    background-color: lightgray;
+    padding-left: 1rem;
+}
+
+.mr-auto, .ml-auto {
+    padding: 0 1rem 0 1rem;
+}
+
+#row-button, #row-buttonn {
+    margin: 5px;
+}
+
+.logo-VNair {
+    display: flex;
+}
+
+.wrap-element {
+    margin: 5px;
+}
+
+.span-head-title {
+    color: #0091B1;
+}
+
+.right-content {
+    position: relative;
+    display: flex;
+}
+
+.foorder-right {
+    background-color: rgb(255, 219, 189);
+}
+
+.content-price {
+    font-size: 16px;
+    margin-left: 2.5rem;
+    padding-bottom: 1px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+.header-icon {
+    margin-right: 1rem;
+}
+
+.icon, .plus-time {
+    margin: 0rem 1rem;
+}
+
+.viewdetail {
+    border: none;
+    background-color: white;
+    display: block;
+    padding: 0;
+    color: #0091B1;
+    position: relative;
+    font-size: 12px;
+}
+
+.viewdetail::before {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 14px;
+    height: 14px;
+    background: #f7f6f5;
+    left: 20px;
+    bottom: -31px;
+    transform: rotate(45deg);
+}
+
+.segment-line {
+    margin-top: 1rem;
+    margin-left: 50px;
+    position: relative;
+    background: white;
+}
+
+.segment-content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #39c;
+    width: .0625rem;
+    bottom: 0;
+    left: -1.8rem;
+    top: 2.65rem;
+    margin-bottom: 1.7rem;
+}
+
+.segment-header::after {
+    content: "";
+    position: absolute;
+    background: url(image/icon-flight.png) no-repeat 0 0;
+    width: 50px;
+    height: 50px;
+    left: -50px;
+    z-index: 1;
+}
+
+.segment-footer::after {
+    content: "";
+    position: absolute;
+    background: url(image/icon-flight_arrived.png) no-repeat 0 0;
+    width: 50px;
+    height: 50px;
+    left: -50px;
+    z-index: 1;
+}
+
+.segment-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.segment-footer {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.segment-content, .segment-content1 {
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+.fontweight {
+    font-weight: bold;
+}
+
+.changebackground1 {
+    background-color: #168fb0;
+}
+
+.changebackground2 {
+    background-color: #e8b119;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.content-hidden {
+    color: black;
+}
+
+.content-hidden>a {
+    color: black;
+}
+
+#setting {
+    cursor: pointer;
+    position: relative;
+}
+
+#select-language {
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+    top: 4rem;
+}
+
+#inputState {
+    padding: 0rem;
+}
+
+.edit {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.li-footer {
+    cursor: pointer;
+}
+
+#login {
+    top: 30%;
+}
+
+.modal-body {
+    left: 30%;
+}
